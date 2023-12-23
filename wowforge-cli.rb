@@ -5,21 +5,21 @@
 class WowforgeCli < Formula
   desc "Easily add and update addons for your World of Warcraft installation"
   homepage "https://github.com/m-triassi/wowforge-cli"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/m-triassi/wowforge-cli/releases/download/v1.0.0/wowforge-cli_1.0.0_darwin_arm64.tar.gz"
-      sha256 "ccd68f5326c0a14d56088394258a3ffc66e24c8bba74134820ef1bbf7d7cf891"
+      url "https://github.com/m-triassi/wowforge-cli/releases/download/v1.1.0/wowforge-cli_1.1.0_darwin_arm64.tar.gz"
+      sha256 "ce0e8366e2904ce2dff5975a79c31a1e263b3492325822f29c6fa5093e7aa253"
 
       def install
         bin.install "wowforge-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/m-triassi/wowforge-cli/releases/download/v1.0.0/wowforge-cli_1.0.0_darwin_amd64.tar.gz"
-      sha256 "3f399233064a76b50673687e03c593fda5e8ff334f7bdd085874b884fbc09625"
+      url "https://github.com/m-triassi/wowforge-cli/releases/download/v1.1.0/wowforge-cli_1.1.0_darwin_amd64.tar.gz"
+      sha256 "18f9cbee8456ef46dbe2a476b0c4e5e87cab5ad18c18a99d853a1f5071d39f56"
 
       def install
         bin.install "wowforge-cli"
@@ -29,16 +29,16 @@ class WowforgeCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/m-triassi/wowforge-cli/releases/download/v1.0.0/wowforge-cli_1.0.0_linux_arm64.tar.gz"
-      sha256 "3591a24ea2f58349abf1080285a1039357b0e53d4121c98c2d80a86dbdcc55ea"
+      url "https://github.com/m-triassi/wowforge-cli/releases/download/v1.1.0/wowforge-cli_1.1.0_linux_arm64.tar.gz"
+      sha256 "cfbd5bd53a648cb180a7fff1ceb7941bfa3b5c486edd5808ea82a94b29f8c68e"
 
       def install
         bin.install "wowforge-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/m-triassi/wowforge-cli/releases/download/v1.0.0/wowforge-cli_1.0.0_linux_amd64.tar.gz"
-      sha256 "c1bf21310afa9dcd5bec84e6bfc3c273654e5504e30370c511902138b34c76d0"
+      url "https://github.com/m-triassi/wowforge-cli/releases/download/v1.1.0/wowforge-cli_1.1.0_linux_amd64.tar.gz"
+      sha256 "657b6fe35b45433c84a90a1613116781a2d4e0eeb5d046eaa9546aae923cb8ff"
 
       def install
         bin.install "wowforge-cli"
